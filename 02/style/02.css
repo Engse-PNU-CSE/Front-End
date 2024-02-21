@@ -1,0 +1,99 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Protest Strike';
+    font-style: normal;
+    font-weight: 400;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+nav a:hover, nav li:hover {
+    background-color: royalblue;
+    color: whitesmoke;
+    nav a {
+        color: whitesmoke;
+    }
+    border-radius: 10px;
+    cursor: pointer;
+}
+li {
+    list-style: none; 
+}
+main {
+    width: 60%;
+    margin-left: 20%;
+    background-color: lightblue;
+}
+section {
+    background-color: whitesmoke;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+header {
+    position: relative;
+}
+header>h1 {
+    text-align: center;
+    font-size: 48px;
+}
+nav>ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 10px;
+    justify-content: right;
+}
+nav li {
+    margin: 10px;
+    padding: 10px;
+}
+article {
+    margin-top: 10%;
+    padding: 50px;
+    font-size: 30px;
+}
+article p {
+    padding: 10px;
+    font-size: 24px;
+}
+section div {
+    display: flex;
+    justify-content: left;
+    margin: 20px;
+    padding: 5px;
+}
+section h1 {
+    font-size: 30px;
+}
+section div p {
+    margin-left: 20px;
+}
+img {
+    border-radius: 30%;
+}
+footer {
+    background-color: whitesmoke;
+}
+footer div {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    font-size: 10px;
+}
+footer img {
+    width: 100px;
+    height: 70px;
+}
+footer ul {
+    padding-left: 20px;
+}
+@media only screen and (max-width: 768px) {
+    main {
+    width: 100%;
+    margin-left: 0;
+    background-color: lightcyan;
+    }
+}
