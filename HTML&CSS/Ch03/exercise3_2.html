@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 180px;
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="fieldset_user">
+        <form action="https://www.naver.com" method="post">
+            <fieldset>
+                <button type="submit">
+                    <img src="../images/google-icon.png" alt="구글로고" width="20" height="15">
+                    Log in with Google
+                </button>
+            </fieldset>
+        </form>
+        <form action="https://httpbin.org/post" method="post">
+            <fieldset>
+                <p><strong>or</strong></p>
+                <input type="text" placeholder="Username" id="username"><br>
+                <input type="password" placeholder="Password" id="password"><br>
+                <button type="submit">LOGIN</button><br>
+                <p><a href="https://www.naver.com">Forgot your password?</a></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+* {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+h1 {
+    padding: 20px;
+    margin: 20px;
+    border: 20px;
+}

@@ -1,0 +1,17 @@
+h1 {
+    color:red;
+    background-color: rgb(192, 192, 192);
+    padding: 20px;
+    border-style: solid;
+
+}
+
+.my_p {
+    color:aqua;
+    
+}
+#my_id {
+    font-size: 10px;
+    color: blueviolet;
+    background-color: lavenderblush;
+}

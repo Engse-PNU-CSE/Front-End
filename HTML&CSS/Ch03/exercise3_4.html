@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 280px;
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="headline">
+        <h1>Contact</h1>
+        <p>contact me</p>
+    </div>
+    <div class="box">
+        <form action="https://httpbin.org/post" method="post">
+            <fieldset>
+                <legend>info</legend>
+                <p><label for="FristName">First Name : </label><input type="text" id="FristName" placeholder="Enter your First Name"></p>
+                <p><label for="SecondName">Last Name : </label><input type="password" id="SecondName" placeholder="Enter your Lase Name"></p>
+                <p><label for="Password">Password : </label><input type="text" id="Password" placeholder="Enter your password"></p>
+                <p><label for="Phone">Phone : </label><input type="number" id="Phone" placeholder="010-1234-5678"></p>
+                <p><label for="Age">Age : </label><input type="text" id="Age"></p>
+                <p><label for="IDE">Your IDE : </label><select name="IDE" id="IDE"><optgroup label="IDE"><option value="VSCode">VSCode</option><option value="VS">Vs</option><option value="Eclipse">Eclipse</option></optgroup></select></p>
+                <p><label for="agree">Agree : </label><input type="checkbox" id="agree" value="agree"></p>
+                <p><button>Submit</button> <button>Reset</button></p>
+            </fieldset>
+        </form>
+    </div>
+    <a href="/Ch03/exercise3_1.html">sdf</a>
+</body>
+</html>

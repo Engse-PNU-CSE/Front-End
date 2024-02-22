@@ -1,0 +1,29 @@
+h1 {
+    font-size: 14px;
+}
+p {
+    font-weight: 900;
+}
+
+.first {
+    font-size: 24px;   
+    color: red;x
+}
+.oblique {
+    font-style: oblique;
+}
+.italic {
+    font-style: italic;
+}
+.variant {
+    font-variant: small-caps;
+}
+.lorem {
+    color:red;
+    text-align: justify;
+    line-height:normal;
+    background-color: aqua  ;
+}
+/* * {
+    border: 1px solid black;
+} */

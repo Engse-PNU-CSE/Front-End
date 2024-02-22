@@ -1,0 +1,37 @@
+h1 {
+    color: rgb(233, 82, 132);
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 10px dotted #933ba1;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  .job-title {
+    font-size: 20px;
+    color: #999999;
+    font-weight: bold;
+  }
+  
+  a:link {
+    color: #fb6542;
+  }
+  a:visited {
+    color: green;
+  }
+p {
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  h2 {
+    font-style: oblique;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .list {
+    background-color: lightgray;
+    border: 5px solid slateblue;
+  }
