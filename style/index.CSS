@@ -1,0 +1,44 @@
+ * {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Protest Strike';
+    font-style: normal;
+    font-weight: 400;
+ }
+
+ li {
+    list-style: none;
+ }
+
+ main {
+    width: 60%;
+    margin-left: 20%;
+ }
+ header {
+    background-color: lightblue;
+    color: whitesmoke;
+    height: 100px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+ }
+ article ul {
+    width: 80%;
+    margin-top: 20px;
+    background-color: beige;
+ }
+article li {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    border: 1px dotted gray;
+    padding: 10px;
+}
