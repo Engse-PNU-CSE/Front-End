@@ -63,3 +63,10 @@ button:hover {
     background-color: dodgerblue;
     cursor: pointer;
 }
+footer {
+    font-size: 10px;
+}
+section div h2 {
+    font-size: 32px;
+    color: blue;
+}
