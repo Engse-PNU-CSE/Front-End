@@ -59,7 +59,7 @@ button {
     margin: 10px;
     border-radius: 20px;
 }
-button:hover {
+button:hover { 
     background-color: dodgerblue;
     cursor: pointer;
 }
