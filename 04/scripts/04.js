@@ -1,24 +1,37 @@
-function handleClick() {
+let score=0, score1=0;
+addEventListener("DOMContentLoaded", () => {
+    const bt1 = document.querySelector("#throw");
+    //button event check
+    bt1.addEventListener("click", () => {
+        if(handleClick1()==0) score+=1;
+        else score1+=1;
+        document.querySelector("#computerScore").innerHTML = `<h2>score : ${score}</h2>`;
+        document.querySelector("#userScore").innerHTML = `<h2>scroe : ${score1}</h2>`;
+    });
+});
+const handleClick1 = () => {
     const diceNumber = Math.floor(Math.random()*6+1);
-    if(diceNumber == 1) dice=`./images/1.png`
-    else if(diceNumber == 2) dice=`./images/2.png`
-    else if(diceNumber == 3) dice=`./images/3.png`
-    else if(diceNumber == 4) dice=`./images/4.png`
-    else if(diceNumber == 5) dice=`./images/5.png`
-    else dice="./images/6.png"
+
+    dice = `./images/${diceNumber}.png`;
     document.querySelector("#imgUser").setAttribute("src", dice);
 
     const diceNumber2 = Math.floor(Math.random()*6+1);
-    if(diceNumber2 == 1) dice=`./images/1.png`
-    else if(diceNumber2 == 2) dice=`./images/2.png`
-    else if(diceNumber2 == 3) dice=`./images/3.png`
-    else if(diceNumber2 == 4) dice=`./images/4.png`
-    else if(diceNumber2 == 5) dice=`./images/5.png`
-    else dice="./images/6.png"
+    dice = `./images/${diceNumber2}.png`;
     document.querySelector("#imgComputer").setAttribute("src", dice);
     let msg;
-    if(diceNumber==diceNumber2) msg = `You Draw`;
-    else if(diceNumber<diceNumber2) msg = `You Lose`;
-    else msg = `You Win`;
-    document.querySelector("#msgArea").innerHTML = msg
+    if(diceNumber==diceNumber2) {
+        msg = `<h1>You Draw</h1>`;
+        document.querySelector("#msgArea").innerHTML = msg
+    }
+    else if(diceNumber<diceNumber2) {
+        msg = `<h1 style="color:red">You Lose</h1>`;
+        document.querySelector("#msgArea").innerHTML = msg
+        return 0;
+    }
+    else {
+        msg = `<h1 style="color:blue">You Win</h1>`;
+        document.querySelector("#msgArea").innerHTML = msg
+        return 1;
+    }
+    
 }
