@@ -7,10 +7,11 @@
 function handleClick(n) {
 //    document.querySelector("#msgArea").innerHTML = "<h2>Button " + n + " is selected</h2>"
     let msg;
-    if(n==1) document.querySelector("#msgArea").innerHTML = `<h2>Hello</h2>`;
-    else if(n==2) document.querySelector("#msgArea").innerHTML = `<h2>Hi</h2>`;
-    else if(n==3) document.querySelector("#msgArea").innerHTML = `<h2>See you</h2>`;
-    else document.querySelector("#msgArea").innerHTML = `<h2>Goodbye</h2>`;
+    if(n==1) msg = `<h2>Hello</h2>`;
+    else if(n==2) msg = `<h2>Hi</h2>`;
+    else if(n==3) msg = `<h2>See you</h2>`;
+    else msg = `<h2>Goodbye</h2>`;
+    document.querySelector("#msgArea").innerHTML = msg;
 }
 
 //After DomTree making
@@ -28,6 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
     //add Button text
     bt3.appendChild(bt3txt);
     bt4.appendChild(bt4txt);
+    bt3.setAttribute("id", "bt3");
+    bt4.setAttribute("id", "bt4")
     //make Button Event
     bt3.addEventListener("click", () => {
         handleClick(3);

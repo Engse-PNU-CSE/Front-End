@@ -58,56 +58,28 @@ section div {
 }
 section div div {
     display: flex;
-    justify-content:center;
-    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
 }
-button {
-    width: 100px;
-    height: 40px; 
-    background-color:cornflowerblue;
+img {
+    width: 50%;
+    height: 50%;
+}
+section #throw {
+    background-color:deepskyblue;
     color: whitesmoke;
     border: 0;
     padding: 10px;
     margin: 10px;
     border-radius: 20px;
 }
-button:hover { 
-    background-color: dodgerblue;
-    cursor: pointer;
-}
-#btArea2 button{
-    width: 100px;
-    height: 40px; 
-    background-color:mediumseagreen;
-    color: whitesmoke;
-    border: 0;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 20px;
-}
-#btArea2 button:hover { 
-    background-color: rgba(14, 134, 94, 0.99);
-    cursor: pointer;
-}
-div #bt3 {
-    width: 100px;
-    height: 40px; 
-    background-color:lightpink;
-    color: whitesmoke;
-    border: 0;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 20px;
-}
-div #bt3:hover { 
-    background-color:palevioletred;
+section #throw:hover {
+    background-color: blue;
     cursor: pointer;
 }
 
 footer {
     font-size: 10px;
-}
-section div h2 {
-    font-size: 32px;
-    color: blue;
 }
