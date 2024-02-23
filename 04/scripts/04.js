@@ -3,8 +3,9 @@ addEventListener("DOMContentLoaded", () => {
     const bt1 = document.querySelector("#throw");
     //button event check
     bt1.addEventListener("click", () => {
-        if(handleClick1()==0) score+=1;
-        else score1+=1;
+        const check = handleClick1();
+        if(check==0) score+=1;
+        else if(check==1) score1+=1;
         document.querySelector("#computerScore").innerHTML = `<h2>score : ${score}</h2>`;
         document.querySelector("#userScore").innerHTML = `<h2>scroe : ${score1}</h2>`;
     });
@@ -22,6 +23,7 @@ const handleClick1 = () => {
     if(diceNumber==diceNumber2) {
         msg = `<h1>You Draw</h1>`;
         document.querySelector("#msgArea").innerHTML = msg
+        return 2;
     }
     else if(diceNumber<diceNumber2) {
         msg = `<h1 style="color:red">You Lose</h1>`;
