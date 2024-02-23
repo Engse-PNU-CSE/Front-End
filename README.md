@@ -18,3 +18,4 @@
  - JavaScript
    - What is JavaScripts?(24.02)
    - How use function in JS(24.02)
+   - How use Eventhandeler in JS(24.02)
