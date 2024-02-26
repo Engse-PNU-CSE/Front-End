@@ -67,12 +67,14 @@ header a {
     display: inline-flex;
     width: 80%; 
     height: 40px; 
+    border-radius: 10px;
   }
   
   input[type=number] {
     display: inline-flex;
-    width: 60%; 
-    height: 40px; 
+    width: 75%; 
+    height: 40px;
+    border-radius: 10px;
   }
   
   label {
