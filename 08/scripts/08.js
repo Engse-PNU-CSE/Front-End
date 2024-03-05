@@ -1,45 +1,34 @@
-//℃ = (°F − 32) × 5/9
-//℃ = (°F − 32) ÷ 1.8
-
 document.addEventListener("DOMContentLoaded", () => {
-    const sel1 = document.querySelector("#sel1");
-    const sel2 = document.querySelector("#sel2");
-    const txt1 = document.querySelector("#txt1");
-    const txt2 = document.querySelector("#txt2");
-
-    const labels = document.querySelectorAll("label");
-
-    sel1.addEventListener("change", () => {
-        handleChange(sel1, sel2, labels[0], labels[1], txt1, txt2);
- 
+    const n = document.querySelector("section img");
+    const inputNum = document.querySelector("section input");
+    const submitButton = document.querySelector("section button");
+    var num;
+    let flag = false;
+    n.addEventListener("click", () => {
+        if(!flag) {
+            num = Math.floor(Math.random()*100+1);
+            flag = true;
+            console.log(num);
+        }
     });
-    sel2.addEventListener("change", () => {
-        handleChange(sel2, sel1, labels[1], labels[0], txt1, txt2);
-
-    });
-
-    txt1.addEventListener("input", () => {
-        if(sel1.value === "°C") {
-            txt2.value = (txt1.value * 1.8) + 32;
+    submitButton.addEventListener("click", () => {
+        if(inputNum.value == '') {
+            document.querySelector("#msg").innerHTML = '<h1>Input number</h1>'
+            inputNum.focus();
+            return;
+        }
+        if(num > inputNum.value) {
+            console.log("UP");
+            n.setAttribute("src", `./images/up.png`);
+        }
+        else if( num == inputNum.value) {
+            console.log("Equal");
+            n.setAttribute("src", `./images/good.png`);
+            flag = false;
         }
         else {
-           txt2.value = (txt1.value - 32) / 1.8;
+            console.log("Down");
+            n.setAttribute("src", `./images/down.png`);
         }
-    })
-})
-
-
-const handleChange = (s1, s2, l1, l2, t1, t2) => {
-    if(s1.value === "°C") {
-        s2.value = "°F";
-        l1.innerHTML = "°C";
-        l2.innerHTML = "°F";
-    }
-    else {
-        s2.value = "°C"
-        l1.innerHTML = "°F";
-        l2.innerHTML = "°C";
-    }
-    t1.value=t2.value='';
-    t1.focus();
-}
+    });
+});

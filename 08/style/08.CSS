@@ -5,6 +5,7 @@
     font-family: 'Protest Strike';
     font-style: normal;
     font-weight: 400;
+    
  }
 
  li {
@@ -40,48 +41,65 @@ header a {
     justify-content: center;
     align-items: center;
 }
-
- section > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+}
+section div div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
   
-  .row {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin: 10px;
-  }
-  
-  .row > div {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 40%;  
-  }
-  
-  select {
-    display: inline-flex;
-    width: 80%; 
-    height: 40px; 
-    border-radius: 10px;
-  }
-  
-  input[type=number] {
-    display: inline-flex;
-    width: 75%; 
-    height: 40px;
-    border-radius: 10px;
-  }
-  
-  label {
-    font-size: large;
-    font-weight: bold; 
-  }
-  
-  #txt2 {
-    background-color: beige;
-  }
+}
+input[type=number] {
+  display: inline-flex;
+  width: 50%;
+  height: 50px;
+  font-size: 24px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px black solid;
+  border-radius: 10px;
+}
+section button {
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 10px;
+  margin: 10px;
+  background-color: lightskyblue;
+  color: whitesmoke;
+  border: 0;
+}
+section button:hover {
+  cursor: pointer;
+  background-color: midnightblue;
+  color: whitesmoke;
+}
+section div img:hover {
+  cursor: pointer;
+}
+section div #msg {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 32px;
+}
