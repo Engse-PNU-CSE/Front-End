@@ -35,7 +35,7 @@ header a {
    color: whitesmoke;
    border-radius: 10px;
  }
- section h1 {
+section h1 {
     display: flex;
     padding: 20px;
     justify-content: center;
