@@ -50,11 +50,43 @@ section div div{
    justify-content: center;
    align-items: center;
 }
-section div div div{
+section div div span{
    display: flex;
    flex-direction: row;
    padding: 20px;
+   margin : 10px;
+   height: 20px;
+   width: 20px;
    justify-content: center;
    align-items: center;
    text-align: center;
+   border-radius: 100%;
+}
+.sp0 {
+   background-color: rgb(80, 211, 255);
+   color: whitesmoke;
+}
+.sp1 {
+   background-color: deepskyblue;
+   color: whitesmoke;
+}
+.sp2 {
+   background-color: navy;
+   color: whitesmoke;
+}
+.sp4 {
+   background-color: blueviolet;
+   color: whitesmoke;
+}
+.sp3 {
+   background-color: slateblue;
+   color: whitesmoke;
+}
+.spbonus {
+   background-color: darkslateblue;
+   color: whitesmoke;
+}
+.plus {
+   font-weight: bolder;
+   font-size: 24px;
 }
