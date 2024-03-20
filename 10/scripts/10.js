@@ -19,20 +19,5 @@ const clickbts = () => {
   }
   msg = lottos.toString().replaceAll(',', '');
   numarea.innerHTML = msg;
-  // let basic_number = lottos.slice(0, -1).sort((a, b) => a - b);
-  // let bouns_number = lottos.slice(-1);
-  // let tags = '';
-  // basic_number.map((v) => {
-  //   tags = tags + `<span class = "sp${parseInt(v/10)}">${v}</span>`
-  // });
-  // tags = tags + `<span class = "plus">+</span><span class = "sp${parseInt(bouns_number/10)}">${bouns_number}</span>`
-  // numarea.innerHTML = tags;
-  // let tags = [];
-  // tags = lottos.map((v) => 
-  //   `<span class = "sp${parseInt(v / 10)}">${v}</span>`
-  // );
-  // tags.splice(6, 0,`<span class = "plus">+</span>`)
-  // msg = tags.toString().replaceAll(',', '');
-  // numarea.innerHTML = msg;
-  // console.log(msg);
+
 };
